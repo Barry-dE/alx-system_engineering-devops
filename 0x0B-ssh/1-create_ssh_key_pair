@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-openssl genpkey -algorithm RSA -out ~/.ssh/school -aes256 -pass pass:betty -pkeyopt rsa_keygen_bits:4096
+#RSA key gen
+
+ssh-keygen -b 4096 -N betty -f school
